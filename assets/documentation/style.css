@@ -1,0 +1,284 @@
+/*
+ * Documentation Specific Stylesheet (Revised: Blue Theme)
+ */
+
+/* ===== Base Content Styles ===== */
+.content-wrapper p {
+  padding: 0 10px;
+  font-size: 16px;
+  position: relative;
+  z-index: 30;
+}
+
+.content {
+  font-size: 16px;
+  padding: 10px 25px;
+  z-index: 500;
+}
+
+ul {
+  margin-bottom: 20px;
+}
+
+p {
+  padding: 0 !important;
+}
+
+.bring-up {
+  position: relative;
+  z-index: 30;
+}
+
+/* ===== Titles and Headers ===== */
+#components > h3 {
+  font-size: 25px;
+  color: #000;
+}
+
+#components > h4 {
+  font-size: 20px;
+  color: #000;
+}
+
+.page-header {
+  margin: 20px 0 10px 0 !important;
+  position: relative;
+  z-index: 1;
+  font-size: 30px;
+}
+
+.page-header span,
+.page-header a {
+  z-index: 5;
+  display: block;
+  background-color: #ecf0f5;
+  color: #000;
+}
+
+.page-header span::before,
+.page-header a::before {
+  content: '#';
+  font-size: 25px;
+  margin-right: 10px;
+  color: #007bff; /* Blue Accent */
+}
+
+.page-header:before,
+#components > h3:before {
+  display: block;
+  content: " ";
+  margin-top: -60px;
+  height: 60px;
+  visibility: hidden;
+  z-index: -10;
+}
+
+.lead {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* ===== Table & Hierarchy ===== */
+.nth-2-center > tbody > tr > td:last-of-type {
+  text-align: center !important;
+}
+
+.hierarchy {
+  background: #333;
+  color: #fff;
+}
+
+.plugins-list li {
+  width: 50%;
+  float: left;
+}
+
+/* ===== Example Label ===== */
+.eg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  background: #d2d6de;
+  padding: 5px;
+  border-bottom-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom: 1px solid #d2d6dc;
+  border-right: 1px solid #d2d6dc;
+}
+
+.eg + * {
+  margin-top: 30px;
+}
+
+/* ===== Sidebar & Box Layout ===== */
+.sidebar {
+  margin-top: 0;
+  padding-top: 0 !important;
+}
+
+.box .main-header {
+  z-index: 1000;
+  position: relative;
+}
+
+.treeview .nav li a:hover,
+.treeview .nav li a:active {
+  background: transparent;
+}
+
+/* ===== Code & Pre Styles ===== */
+pre {
+  border: none;
+}
+
+pre.prettyprint {
+  background: white;
+  font-family: Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  border: 1px solid #dedede !important;
+  padding: 10px;
+  max-height: 300px;
+  width: auto;
+  overflow: auto !important;
+}
+
+pre.prettyprint > code {
+  width: auto;
+  overflow: auto !important;
+}
+
+.pln {
+  color: #111;
+}
+
+/* ===== Code Colors (Screen) ===== */
+@media screen {
+  .str,
+  .kwd,
+  .atn {
+    color: #007bff; /* Blue */
+  }
+
+  .com {
+    color: #999;
+  }
+
+  .typ {
+    color: #0056b3; /* Darker Blue */
+  }
+
+  .lit,
+  .fun {
+    color: #538192;
+  }
+
+  .pun,
+  .opn,
+  .clo,
+  .tag,
+  .dec,
+  .var {
+    color: #111;
+  }
+
+  .atv {
+    color: #0056b3;
+  }
+}
+
+/* ===== Code Colors (Print) ===== */
+@media print, projection {
+  .str {
+    color: #007bff;
+  }
+
+  .kwd {
+    color: #0056b3;
+    font-weight: bold;
+  }
+
+  .com {
+    color: #666;
+    font-style: italic;
+  }
+
+  .typ {
+    color: #004c99;
+    font-weight: bold;
+  }
+
+  .lit {
+    color: #004c99;
+  }
+
+  .pun,
+  .opn,
+  .clo {
+    color: #333;
+  }
+
+  .tag {
+    color: #0056b3;
+    font-weight: bold;
+  }
+
+  .atn {
+    color: #004c99;
+  }
+
+  .atv {
+    color: #007bff;
+  }
+}
+
+/* ===== Line Numbers ===== */
+ol.linenums {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* ===== Custom Blue Box ===== */
+.box.box-primary.box-solid {
+  border-top-color: #007bff !important;
+}
+
+.box.box-primary.box-solid > .box-header {
+  background-color: #007bff !important;
+  color: #fff !important;
+}
+
+.box.box-primary.box-solid > .box-body {
+  background-color: #f0f8ff;
+  color: #000;
+}
+
+/* ===== Custom Blue Button & DataTables ===== */
+.btn-custom-blue {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.btn-custom-blue:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+.dataTables_info {
+  color: #007bff;
+  font-weight: 600;
+}
+
+/* Override warna biru AdminLTE untuk semua btn-primary */
+.btn-primary {
+  background-color: #007bff !important;
+  border-color: #007bff !important;
+  color: #fff !important;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3 !important;
+  border-color: #004c99 !important;
+}
