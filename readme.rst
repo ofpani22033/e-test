@@ -30,7 +30,6 @@ D. Menjalankan Aplikasi
     ```
     http://localhost/e-test/
     ```
-(Ganti `e-test-ci` jika Anda menggunakan nama folder yang berbeda).
 
 E. Login Administrator Awal
 Setelah aplikasi terbuka, gunakan akun default berikut untuk memulai konfigurasi sistem sebagai Admin.
