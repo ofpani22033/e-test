@@ -36,7 +36,7 @@ E. Login Administrator Awal
 Setelah aplikasi terbuka, gunakan akun default berikut untuk memulai konfigurasi sistem sebagai Admin.
 1. Halaman Login: Akses `http://localhost/e-test/auth/login` 
 2. Akun Default Administrator:
-      * Username:** `admin`
-      * Password:** `admin` 
+      * Username: `admin`
+      * Password: `admin` 
 
 PERINGATAN KEAMANAN: Segera ganti password Administrator default setelah login pertama kali.
